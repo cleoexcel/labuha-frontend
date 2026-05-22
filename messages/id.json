@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "beranda": "Beranda",
+    "tentang": "Tentang Kami",
+    "bisnis": "Bisnis",
+    "keberlanjutan": "Keberlanjutan",
+    "berita": "Berita",
+    "karir": "Karir",
+    "kontak": "Kontak"
+  },
+  "hero": {
+    "title": "PT Labuha Inter Nusa"
+  },
+  "tentang": {
+    "title": "Tentang Labuha",
+    "description": "PT Labuha Inter Nusa adalah Perusahaan pertambangan yang memprioritaskan keunggulan, keselamatan, dan lingkungan. Berdiri sejak 16 September 2021, PT Labuha Inter Nusa (Labuha) terus berkembang pesat di jasa sektor pertambangan mineral dan batu bara sebagai bagian dari ABM Group. Dengan tim profesional sebanyak 611 orang, kami beroperasi di Palu, Gorontalo, dan daerah/wilayah potensial lainnya.",
+    "cta": "Selengkapnya"
+  },
+  "bisnis": {
+    "title": "Bisnis Kami",
+    "cta": "Selengkapnya",
+    "slides": [
+      { "title": "Reklamasi Tambang\n(Mine Reclamation)" },
+      { "title": "Pengupasan Lapisan Tanah\n(Over Burden Removal)" },
+      { "title": "Penambangan Batubara\n(Coal Mining)" },
+      { "title": "Pengangkutan Material\n(Material Hauling)" }
+    ]
+  },
+  "berita": {
+    "title": "Berita",
+    "description": "Lihat berita seputar PT Labuha Internusa",
+    "cta": "Selengkapnya"
+  },
+  "keberlanjutan": {
+    "title": "Keberlanjutan",
+    "description": "Di Labuha, komitmen kami untuk menjaga keunggulan tidak hanya terbatas pada operasional pertambangan, tetapi juga mencakup standar ketat Kesehatan dan Keselamatan Kerja (K3), pelestarian lingkungan, dan dampak positif bagi masyarakat.",
+    "cta": "Selengkapnya"
+  },
+  "footer": {
+    "company": "PT Labuha Inter Nusa",
+    "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",
+    "copyright": "Copyright 2026 PT. Labuha Internusa. All Right Reserved"
+  }
+}

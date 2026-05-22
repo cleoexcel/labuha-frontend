@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "beranda": "Home",
+    "tentang": "About Us",
+    "bisnis": "Business",
+    "keberlanjutan": "Sustainability",
+    "berita": "News",
+    "karir": "Career",
+    "kontak": "Contact"
+  },
+  "hero": {
+    "title": "PT Labuha Inter Nusa"
+  },
+  "tentang": {
+    "title": "About Labuha",
+    "description": "PT Labuha Inter Nusa is a mining company that prioritizes excellence, safety, and the environment. Founded on September 16, 2021, PT Labuha Inter Nusa (Labuha) continues to grow rapidly in mineral and coal mining services as part of ABM Group. With a professional team of 611 people, we operate in Palu, Gorontalo, and other potential regions.",
+    "cta": "Learn More"
+  },
+  "bisnis": {
+    "title": "Our Business",
+    "cta": "Learn More",
+    "slides": [
+      { "title": "Mine Reclamation" },
+      { "title": "Over Burden Removal" },
+      { "title": "Coal Mining" },
+      { "title": "Material Hauling" }
+    ]
+  },
+  "berita": {
+    "title": "News",
+    "description": "Read the latest news about PT Labuha Internusa",
+    "cta": "Learn More"
+  },
+  "keberlanjutan": {
+    "title": "Sustainability",
+    "description": "At Labuha, our commitment to excellence extends beyond mining operations, encompassing strict Occupational Health and Safety (OHS) standards, environmental conservation, and positive impact on communities.",
+    "cta": "Learn More"
+  },
+  "footer": {
+    "company": "PT Labuha Inter Nusa",
+    "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",
+    "copyright": "Copyright 2026 PT. Labuha Internusa. All Right Reserved"
+  }
+}
