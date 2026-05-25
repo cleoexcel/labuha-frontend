@@ -127,6 +127,28 @@
       "commissioner": "Board of Commissioner"
     }
   },
+   "kontak": {
+    "hero": "Contact",
+    "title": "Contact Us",
+    "address": {
+      "name": "PT Labuha",
+      "detail": "Bakrie Tower 23rd floor, Komplek Rasuna Epicentrum. Jl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940."
+    },
+    "email": {
+      "label": "Email",
+      "value": "labuha.internusa@gmail.com"
+    },
+    "telp": {
+      "label": "Phone",
+      "value": "+62 811-4592-999"
+    }
+  },
+  "beritaPage": {
+    "hero": "News",
+    "title": "News",
+    "cta": "Read More",
+    "empty": "No news available."
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",
