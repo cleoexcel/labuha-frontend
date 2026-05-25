@@ -36,6 +36,97 @@
     "description": "Di Labuha, komitmen kami untuk menjaga keunggulan tidak hanya terbatas pada operasional pertambangan, tetapi juga mencakup standar ketat Kesehatan dan Keselamatan Kerja (K3), pelestarian lingkungan, dan dampak positif bagi masyarakat.",
     "cta": "Selengkapnya"
   },
+    "tentangPage": {
+    "hero": "Tentang Labuha",
+    "tabs": {
+      "tentang": "Tentang Kami",
+      "board": "Board of Director & Commissioner"
+    },
+    "companyName": "PT. Labuha Inter Nusa",
+    "companyDesc1": "Berdiri sejak 16 September 2021, PT Labuha Inter Nusa (Labuha) terus berkembang pesat di jasa sektor pertambangan mineral dan batu bara sebagai bagian dari ABM Group. Dengan tim profesional sebanyak 611 orang, kami beroperasi di Palu, Gorontalo, dan daerah/wilayah potensial lainnya.",
+    "companyDesc2": "Di Labuha, kami memegang teguh semangat untuk beradaptasi, bekerja erat dengan berbagai mitra untuk terus meningkatkan produksi seraya mengutamakan keselamatan kerja, kelestarian lingkungan, dan partisipasi aktif dalam pengembangan masyarakat lokal. Prinsip-prinsip ini tidak hanya menjadi panduan operasional kami tetapi juga mencerminkan tanggung jawab kami terhadap praktik berkelanjutan dan kesejahteraan masyarakat.",
+    "visi": {
+      "title": "Visi Perusahaan",
+      "text": "Menjadi mitra yang terbaik, terpercaya, dan terefisien dalam penyediaan jasa pertambangan untuk pertumbuhan perusahaan yang berkelanjutan."
+    },
+    "misi": {
+      "title": "Misi Perusahaan",
+      "items": [
+        "Senantiasa memberikan jasa pertambangan dengan praktik manajemen terbaik.",
+        "Memberikan nilai tambah dan kepuasan pelanggan melalui pengembangan semua sumber daya secara profesional.",
+        "Melindungi semua pemangku kepentingan dengan memprioritaskan kepentingan masyarakat dan menekankan standar kesehatan, keselamatan, dan lingkungan.",
+        "Mendukung pengembangan bisnis dengan menciptakan lingkungan terbaik bagi karyawan dan mitra bisnis."
+      ]
+    },
+    "nilai": {
+      "title": "Nilai-nilai Perusahaan",
+      "items": [
+        {
+          "id": "profesionalisme",
+          "label": "Profesionalisme",
+          "sub": "Professionalism",
+          "image": "/images/tentang/nilai-1.png"
+        },
+        {
+          "id": "efisiensi",
+          "label": "Efisiensi & Efektivitas",
+          "sub": "Efficiency & Effectivines",
+          "image": "/images/tentang/nilai-2.png"
+        },
+        {
+          "id": "disiplin",
+          "label": "Disiplin",
+          "sub": "Discipline",
+          "image": "/images/tentang/nilai-3.png"
+        },
+        {
+          "id": "keuletaan",
+          "label": "Keuletan",
+          "sub": "Perseverance",
+          "image": "/images/tentang/nilai-4.png"
+        }
+      ]
+    },
+    "falsafah": {
+      "title": "Falsafah ABM Group",
+      "items": [
+        {
+          "id": "integritas",
+          "label": "Integritas",
+          "sub": "Integrity",
+          "image": "/images/tentang/falsafah-1.png"
+        },
+        {
+          "id": "ikhlas",
+          "label": "Ikhlas",
+          "sub": "Sincerity",
+          "image": "/images/tentang/falsafah-2.png"
+        },
+        {
+          "id": "tulus",
+          "label": "Tulus",
+          "sub": "Earnestness",
+          "image": "/images/tentang/falsafah-3.png"
+        },
+        {
+          "id": "loyalitas",
+          "label": "Loyalitas",
+          "sub": "Loyalty",
+          "image": "/images/tentang/falsafah-4.png"
+        },
+        {
+          "id": "tanggung",
+          "label": "Tanggung Jawab",
+          "sub": "Responsibility",
+          "image": "/images/tentang/falsafah-5.png"
+        }
+      ]
+    },
+    "board": {
+      "director": "Board of Director",
+      "commissioner": "Board of Commissioner"
+    }
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",

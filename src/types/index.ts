@@ -12,6 +12,24 @@ export interface Product {
   order_index: number;
 }
 
+export interface BoardOfDirector {
+  id: string;
+  name: string;
+  position: string;
+  position_en: string;
+  photo_url: string;
+  order_index: number;
+}
+
+export interface BoardOfCommissioner {
+  id: string;
+  name: string;
+  position: string;
+  position_en: string;
+  photo_url: string;
+  order_index: number;
+}
+
 export interface News {
   id: string;
   title: string;

@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/beranda/HeroSection';
@@ -12,12 +13,13 @@ export default async function BerandaPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations('hero');
 
   return (
     <>
       <Navbar />
       <main style={{ paddingTop: 56 }}>
-        <HeroSection />
+        <HeroSection title={t('title')} />
         <TentangSection locale={locale} />
         <BisnisSection locale={locale} />
 

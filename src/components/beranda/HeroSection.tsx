@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { useTranslations } from 'next-intl';
 
 const heroImages = [
   '/images/hero.png',
@@ -9,8 +8,7 @@ const heroImages = [
   '/images/hero-3.png',
 ];
 
-export default function HeroSection() {
-  const t = useTranslations('hero');
+export default function HeroSection({ title }: { title: string }) {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => {
@@ -45,7 +43,7 @@ export default function HeroSection() {
       <div style={{ position: 'absolute', bottom: 40, left: 0, right: 0 }}>
         <div className="container">
           <h1 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 800, color: '#fff', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
-            {t('title')}
+            {title}
           </h1>
         </div>
       </div>
