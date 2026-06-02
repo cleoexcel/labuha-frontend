@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import InfiniteCarousel from '@/components/ui/InfiniteCarousel';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default async function TentangContent() {
   const t = await getTranslations('tentangPage');
@@ -47,6 +48,7 @@ export default async function TentangContent() {
           <div style={{ width: 80, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 28px' }} />
 
           {/* Gradient border box */}
+          <ScrollReveal direction="up">
           <div style={{ maxWidth: 900, margin: '0 auto', padding: '8px', borderRadius: 16, background: 'linear-gradient(to right, #C29B24, #1a1a1a)' }}>
             <div style={{ background: '#fff', borderRadius: 14, padding: 'clamp(24px, 4vw, 40px) clamp(24px, 5vw, 56px)' }}>
               <p style={{ fontSize: 'clamp(15px, 1.6vw, 19px)', lineHeight: 1.8, color: 'var(--text)', textAlign: 'center' }}>
@@ -54,6 +56,7 @@ export default async function TentangContent() {
               </p>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -64,7 +67,7 @@ export default async function TentangContent() {
             {t('misi.title')}
           </h2>
           <div style={{ width: 80, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 36px' }} />
-
+          <ScrollReveal direction="up">
           <div style={{ maxWidth: 900, margin: '0 auto' }}>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 24 }}>
               {misiItems.map((item, i) => (
@@ -75,6 +78,7 @@ export default async function TentangContent() {
               ))}
             </ul>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 

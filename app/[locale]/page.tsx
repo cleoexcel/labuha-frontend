@@ -6,6 +6,7 @@ import TentangSection from '@/components/beranda/TentangSection';
 import BisnisSection from '@/components/beranda/BisnisSection';
 import BeritaSection from '@/components/beranda/BeritaSection';
 import KeberlanjutanSection from '@/components/beranda/KeberlanjutanSection';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default async function BerandaPage({
   params,
@@ -30,8 +31,12 @@ export default async function BerandaPage({
               gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
               gap: 'clamp(24px, 4vw, 64px)',
             }}>
-              <BeritaSection locale={locale} />
-              <KeberlanjutanSection locale={locale} />
+               <ScrollReveal direction="left">
+        <BeritaSection locale={locale} />
+      </ScrollReveal>
+      <ScrollReveal direction="right">
+        <KeberlanjutanSection locale={locale} />
+      </ScrollReveal>
             </div>
           </div>
         </section>

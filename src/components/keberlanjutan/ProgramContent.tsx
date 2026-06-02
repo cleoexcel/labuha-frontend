@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default async function ProgramContent() {
   const t = await getTranslations('keberlanjutanPage');
@@ -18,6 +19,7 @@ export default async function ProgramContent() {
       {/* Kepedulian Lingkungan - foto kiri, teks kanan, background abu */}
       <section style={{ background: '#f5f5f5', padding: 'clamp(40px, 5vw, 64px) 0', marginTop: 40 }}>
         <div className="container">
+        <ScrollReveal direction="left">
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -43,12 +45,14 @@ export default async function ProgramContent() {
               </p>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Pengembangan Masyarakat - teks kiri, foto kanan */}
       <section style={{ padding: 'clamp(40px, 5vw, 64px) 0' }}>
         <div className="container">
+        <ScrollReveal direction="right">
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -74,6 +78,7 @@ export default async function ProgramContent() {
             </div>
             <img src="/images/keberlanjutan/masyarakat.png" alt={t('masyarakat.title')} style={{ width: '100%', objectFit: 'cover' }} />
           </div>
+          </ScrollReveal>
         </div>
       </section>
     </div>

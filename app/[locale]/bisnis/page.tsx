@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/beranda/HeroSection';
 import JumlahProduk from '@/components/bisnis/JumlahProduk';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default async function BisnisPage({
   params,
@@ -66,6 +67,7 @@ export default async function BisnisPage({
               }}
             >
               <div className="container">
+                <ScrollReveal direction={imageFirst ? 'left' : 'right'}>
                 <div style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -94,6 +96,7 @@ export default async function BisnisPage({
                     </>
                   )}
                 </div>
+                </ScrollReveal>
               </div>
             </section>
           );
