@@ -202,6 +202,41 @@
       ]
     }
   },
+  "bisnisPage": {
+    "hero": "Bisnis Labuha",
+    "title": "Layanan pertambangan yang komprehensif dan efisien",
+    "description": "Labuha menawarkan layanan pertambangan yang lengkap dan efisien untuk memastikan kelancaran penanganan material, penyediaan material tepat waktu untuk pengolahan, dan reklamasi area yang komprehensif di seluruh lokasi operasional. Kami selalu berusaha untuk memenuhi kebutuhan operasional dengan cepat sambil tetap menjaga keselamatan, kelestarian lingkungan, dan keterlibatan masyarakat. Kami telah beroperasi strategis di Palu (Gold Mine), Gorontalo (Quarry), dan Daerah/wilayah lainnya yang potensial.",
+    "services": [
+      {
+        "id": "ekstraksi",
+        "title": "Ekstraksi",
+        "text": "Kami menawarkan berbagai layanan ekstraksi menggunakan peralatan dan teknik terkini dengan memastikan keselamatan dan efisiensi.",
+        "image": "/images/bisnis/ekstraksi.png"
+      },
+      {
+        "id": "pengolahan",
+        "title": "Pengolahan",
+        "text": "Kami membantu Anda mengoptimalkan pemrosesan mineral dengan solusi yang disesuaikan dengan kebutuhan untuk memaksimalkan hasil.",
+        "image": "/images/bisnis/pengolahan.png"
+      },
+      {
+        "id": "reklamasi",
+        "title": "Reklamasi Tambang",
+        "text": "Kami bertanggung jawab terhadap dampak lingkungan dari operasi tambang dengan menerapkan praktik berkelanjutan dan mengembalikan kondisi lahan setelah ekstraksi.",
+        "image": "/images/bisnis/reklamasi.png"
+      },
+      {
+        "id": "peralatan",
+        "title": "Pengelolaan Peralatan",
+        "text": "Kami membantu Anda mengelola peralatan pertambangan secara profesional untuk memastikan efisiensi dan produktivitas optimal.",
+        "image": "/images/bisnis/peralatan.png"
+      }
+    ],
+    "penghargaan": {
+      "title": "Penghargaan & Sertifikasi",
+      "caption": "Komitmen Labuha terhadap praktik pertambangan yang unggul dan berkelanjutan telah memperoleh penghargaan dan sertifikasi yang mencerminkan standar terbaik di industri."
+    }
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",

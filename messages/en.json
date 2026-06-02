@@ -202,6 +202,41 @@
       ]
     }
   },
+  "bisnisPage": {
+    "hero": "Labuha Business",
+    "title": "Comprehensive and efficient mining services",
+    "description": "Labuha offers complete and efficient mining services to ensure smooth material handling, timely material supply for processing, and comprehensive area reclamation across all operational sites. We always strive to meet operational needs quickly while maintaining safety, environmental preservation, and community engagement. We operate strategically in Palu (Gold Mine), Gorontalo (Quarry), and other potential regions.",
+    "services": [
+      {
+        "id": "ekstraksi",
+        "title": "Extraction",
+        "text": "We offer a wide range of extraction services using the latest equipment and techniques while ensuring safety and efficiency.",
+        "image": "/images/bisnis/ekstraksi.png"
+      },
+      {
+        "id": "pengolahan",
+        "title": "Processing",
+        "text": "We help you optimize mineral processing with tailored solutions to maximize yields.",
+        "image": "/images/bisnis/pengolahan.png"
+      },
+      {
+        "id": "reklamasi",
+        "title": "Mine Reclamation",
+        "text": "We take responsibility for the environmental impact of mining operations by applying sustainable practices and restoring land conditions after extraction.",
+        "image": "/images/bisnis/reklamasi.png"
+      },
+      {
+        "id": "peralatan",
+        "title": "Equipment Management",
+        "text": "We help you manage mining equipment professionally to ensure optimal efficiency and productivity.",
+        "image": "/images/bisnis/peralatan.png"
+      }
+    ],
+    "penghargaan": {
+      "title": "Awards & Certifications",
+      "caption": "Labuha's commitment to excellent and sustainable mining practices has earned awards and certifications reflecting the best standards in the industry."
+    }
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",
