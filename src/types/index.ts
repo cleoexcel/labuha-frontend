@@ -40,3 +40,13 @@ export interface News {
   category: string;
   published_at: string;
 }
+
+export interface JobVacancy {
+  id: string;
+  title: string;
+  title_en: string;
+  location: string;
+  deadline: string;
+  is_open: boolean;
+  apply_url: string;
+}

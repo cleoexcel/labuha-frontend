@@ -149,6 +149,23 @@
     "cta": "Read More",
     "empty": "No news available."
   },
+  "karir": {
+    "hero": "Career",
+    "title": "Career",
+    "subtitle": "For career opportunities, please contact our Human Resources Department.",
+    "email": {
+      "label": "Email",
+      "value": "labuha.internusa@gmail.com"
+    },
+    "telp": {
+      "label": "Phone",
+      "value": "+62 219788291"
+    },
+    "lowongan": "Job Vacancies",
+    "deadline": "Deadline:",
+    "cta": "Apply Now",
+    "empty": "No vacancies available at the moment."
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",

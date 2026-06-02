@@ -1,5 +1,5 @@
 import { apiFetch } from '@/lib/api';
-import type { ApiResponse, Product, BoardOfDirector, BoardOfCommissioner, News } from '@/types';
+import type { ApiResponse, Product, BoardOfDirector, BoardOfCommissioner, News, JobVacancy } from '@/types';
 
 export const productService = {
   getFeatured: () => apiFetch<ApiResponse<Product[]>>('/api/products/featured'),
@@ -15,4 +15,8 @@ export const newsService = {
     apiFetch<ApiResponse<News[]>>(`/api/news?limit=${limit}&offset=${offset}`),
   getById: (id: string) =>
     apiFetch<ApiResponse<News>>(`/api/news/${id}`),
+};
+
+export const jobService = {
+  getAll: () => apiFetch<ApiResponse<JobVacancy[]>>('/api/jobs'),
 };
