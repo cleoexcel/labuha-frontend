@@ -166,6 +166,42 @@
     "cta": "Apply Now",
     "empty": "No vacancies available at the moment."
   },
+  "keberlanjutanPage": {
+    "hero": "Sustainability",
+    "tabs": {
+      "program": "Sustainability Program",
+      "mutu": "Quality & OHS"
+    },
+    "csrTitle": "Corporate Social Responsibility",
+    "lingkungan": {
+      "title": "Environmental Stewardship",
+      "text": "We work with the community to employ local wisdom in protecting the environment where we operate. We work with the experts from UNTAD for slope stability assessments and employ advanced environmental infrastructure such as oil traps, settling ponds, and water spray systems. Our commitment extends to nurturing local biodiversity through reforestation efforts and establishing a nursery for post-mining land reclamation."
+    },
+    "masyarakat": {
+      "title": "Community Development",
+      "text": "We actively engage in community development initiatives, including employing local residents, providing support for local infrastructure projects, and participating in religious and cultural festivities. We uphold a comprehensive Corporate Social Responsibility (CSR) framework encompassing environmental sustainability, economic empowerment. societal welfare, and healthcare initiatives."
+    },
+    "mutu": {
+      "title": "Quality & OHS",
+      "items": [
+        {
+          "id": "keselamatan",
+          "title": "Safety",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+        },
+        {
+          "id": "kesehatan",
+          "title": "Health",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+        },
+        {
+          "id": "lingkungan",
+          "title": "Environment",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+        }
+      ]
+    }
+  },
   "footer": {
     "company": "PT Labuha Inter Nusa",
     "address": "Bakrie Tower 23th floor, Kompleks Rasuna Epicentrum\nJl. HR Rasuna Said, Karet Kuningan, Setiabudi, Jakarta, 12940.",
