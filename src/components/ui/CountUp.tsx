@@ -12,7 +12,6 @@ export default function CountUp({ target, duration = 2000 }: CountUpProps) {
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
 
-  // Start animation only when card masuk viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -27,7 +26,6 @@ export default function CountUp({ target, duration = 2000 }: CountUpProps) {
     return () => observer.disconnect();
   }, [started]);
 
-  // Count up animation
   useEffect(() => {
     if (!started) return;
 
@@ -37,13 +35,9 @@ export default function CountUp({ target, duration = 2000 }: CountUpProps) {
     function animate(currentTime: number) {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-
-      // Easing: ease-out
       const eased = 1 - Math.pow(1 - progress, 3);
       const current = Math.round(startValue + (target - startValue) * eased);
-
       setCount(current);
-
       if (progress < 1) {
         requestAnimationFrame(animate);
       }

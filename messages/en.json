@@ -206,6 +206,7 @@
     "hero": "Labuha Business",
     "title": "Comprehensive and efficient mining services",
     "description": "Labuha offers complete and efficient mining services to ensure smooth material handling, timely material supply for processing, and comprehensive area reclamation across all operational sites. We always strive to meet operational needs quickly while maintaining safety, environmental preservation, and community engagement. We operate strategically in Palu (Gold Mine), Gorontalo (Quarry), and other potential regions.",
+    "jumlahProduk": "Total Products",
     "services": [
       {
         "id": "ekstraksi",

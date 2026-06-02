@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/beranda/HeroSection';
+import JumlahProduk from '@/components/bisnis/JumlahProduk';
 
 export default async function BisnisPage({
   params,
@@ -99,7 +100,7 @@ export default async function BisnisPage({
         })}
 
         {/* Penghargaan & Sertifikat */}
-        <section style={{ padding: 'clamp(48px, 6vw, 80px) 0' }}>
+        <section style={{ padding: 'clamp(48px, 6vw, 80px) 0 clamp(20px, 3vw, 32px)' }}>
           <div className="container" style={{ textAlign: 'center' }}>
             {/* Title dengan 2 logo */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 'clamp(16px, 3vw, 40px)', marginBottom: 8, flexWrap: 'wrap' }}>
@@ -109,7 +110,7 @@ export default async function BisnisPage({
               </h2>
               <img src="/images/bisnis/sertifikat-icon-2.png" alt="" style={{ width: 'clamp(48px, 6vw, 72px)', height: 'clamp(48px, 6vw, 72px)', objectFit: 'contain' }} />
             </div>
-            <div style={{ width: 100, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 40px' }} />
+            <div style={{ width: 300, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 40px' }} />
 
             {/* Sertifikat image */}
             <div style={{ maxWidth: 560, margin: '0 auto 32px' }}>
@@ -122,6 +123,7 @@ export default async function BisnisPage({
             </p>
           </div>
         </section>
+        <JumlahProduk />
       </main>
       <Footer />
     </>

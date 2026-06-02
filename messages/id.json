@@ -206,6 +206,7 @@
     "hero": "Bisnis Labuha",
     "title": "Layanan pertambangan yang komprehensif dan efisien",
     "description": "Labuha menawarkan layanan pertambangan yang lengkap dan efisien untuk memastikan kelancaran penanganan material, penyediaan material tepat waktu untuk pengolahan, dan reklamasi area yang komprehensif di seluruh lokasi operasional. Kami selalu berusaha untuk memenuhi kebutuhan operasional dengan cepat sambil tetap menjaga keselamatan, kelestarian lingkungan, dan keterlibatan masyarakat. Kami telah beroperasi strategis di Palu (Gold Mine), Gorontalo (Quarry), dan Daerah/wilayah lainnya yang potensial.",
+    "jumlahProduk": "Jumlah Produk",
     "services": [
       {
         "id": "ekstraksi",

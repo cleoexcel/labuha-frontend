@@ -3,6 +3,7 @@ import type { ApiResponse, Product, BoardOfDirector, BoardOfCommissioner, News, 
 
 export const productService = {
   getFeatured: () => apiFetch<ApiResponse<Product[]>>('/api/products/featured'),
+  getAll: () => apiFetch<ApiResponse<Product[]>>('/api/products'),
 };
 
 export const boardService = {
