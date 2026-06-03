@@ -31,13 +31,13 @@ export default function Navbar() {
     <>
       <nav style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        background: '#1a1a1a', borderBottom: '1px solid #333',
+        background: '#362B09', borderBottom: '1px solid #333',
         height: 56, display: 'flex', alignItems: 'center',
         padding: '0 clamp(16px, 4vw, 60px)', justifyContent: 'space-between',
       }}>
         {/* Logo */}
         <Link href={`/${locale}`} style={{ textDecoration: 'none', flexShrink: 0 }}>
-          <span style={{ fontSize: 18, fontWeight: 700, color: '#fff' }}>Logo</span>
+          <img src="/images/logo-labuha.png" alt="Labuha" style={{ height: 36, objectFit: 'contain', display: 'block' }} />
         </Link>
 
         {/* Desktop nav links */}

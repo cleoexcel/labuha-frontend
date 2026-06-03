@@ -7,8 +7,7 @@ export default async function Footer() {
     <footer style={{ background: 'var(--bg-dark)', color: '#fff', padding: 'clamp(32px, 5vw, 56px) 0 24px' }}>
       <div className="container" style={{ textAlign: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, marginBottom: 24 }}>
-          <span style={{ fontSize: 20, fontWeight: 700 }}>Logo</span>
-          <span style={{ fontSize: 16, fontWeight: 600 }}>{t('company')}</span>
+          <img src="/images/logo-labuha.png" alt="Labuha" style={{ height: 40, objectFit: 'contain' }} />
         </div>
         <p style={{ fontSize: 13, color: '#aaa', lineHeight: 1.8, marginBottom: 24, whiteSpace: 'pre-line' }}>
           {t('address')}
