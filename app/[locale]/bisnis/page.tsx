@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/beranda/HeroSection';
 import JumlahProduk from '@/components/bisnis/JumlahProduk';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import SertifikatSlider from '@/components/bisnis/SertifikatSlider';
 
 export default async function BisnisPage({
   params,
@@ -116,9 +117,7 @@ export default async function BisnisPage({
             <div style={{ width: 300, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 40px' }} />
 
             {/* Sertifikat image */}
-            <div style={{ maxWidth: 560, margin: '0 auto 32px' }}>
-              <img src="/images/bisnis/sertifikat.png" alt="Sertifikat" style={{ width: '100%', objectFit: 'contain' }} />
-            </div>
+            <SertifikatSlider />
 
             {/* Caption */}
             <p style={{ fontSize: 'clamp(15px, 1.6vw, 18px)', lineHeight: 1.8, color: 'var(--text-muted)', maxWidth: 800, margin: '0 auto' }}>
