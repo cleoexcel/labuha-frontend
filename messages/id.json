@@ -170,7 +170,7 @@
     "hero": "Keberlanjutan",
     "tabs": {
       "program": "Program Keberlanjutan",
-      "mutu": "Mutu & K3L"
+      "mutu": "QHSE"
     },
     "csrTitle": "Tanggung Jawab Sosial Perusahaan",
     "lingkungan": {
@@ -182,16 +182,21 @@
       "text": "Kami aktif terlibat dalam inisiatif pengembangan masyarakat, termasuk menggunakan tenaga kerja lokal, mendukung proyek infrastruktur setempat, dan partisipasi dalam kegiatan keagamaan serta kebudayaan. Kami menerapkan kerangka kerja Corporate Social Responsibility (CSR) komprehensif yang mencakup keberlanjutan lingkungan, pemberdayaan ekonomi, kesejahteraan sosial, dan inisiatif kesehatan."
     },
     "mutu": {
-      "title": "Mutu & K3L",
+      "title": "QHSE",
       "items": [
         {
-          "id": "keselamatan",
-          "title": "Keselamatan",
+          "id": "Mutu",
+          "title": "Mutu",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
         },
         {
           "id": "kesehatan",
           "title": "Kesehatan",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+        },
+        {
+          "id": "keselamatan",
+          "title": "Keselamatan",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
         },
         {

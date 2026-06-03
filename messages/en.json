@@ -185,13 +185,18 @@
       "title": "QHSE",
       "items": [
         {
-          "id": "keselamatan",
-          "title": "Safety",
+          "id": "Mutu",
+          "title": "Quality",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
         },
         {
           "id": "kesehatan",
           "title": "Health",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+        },
+        {
+          "id": "keselamatan",
+          "title": "Safety",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
         },
         {
