@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 const locales = ['id', 'en'];
 
 export const metadata: Metadata = {
-  title: 'PT Labuha Inter Nusa',
+  title: 'Labuha Inter Nusa',
   description: 'Perusahaan pertambangan yang memprioritaskan keunggulan, keselamatan, dan lingkungan.',
 };
 

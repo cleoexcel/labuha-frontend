@@ -205,31 +205,31 @@
   "bisnisPage": {
     "hero": "Labuha Business",
     "title": "Comprehensive and efficient mining services",
-    "description": "Labuha offers complete and efficient mining services to ensure smooth material handling, timely material supply for processing, and comprehensive area reclamation across all operational sites. We always strive to meet operational needs quickly while maintaining safety, environmental preservation, and community engagement. We operate strategically in Palu (Gold Mine), Gorontalo (Quarry), and other potential regions.",
+    "description": "Labuha offers complete and efficient mining services to ensure smooth material handling, timely material supply for processing, and comprehensive area reclamation across all operational sites. We always strive to meet operational needs quickly while maintaining safety, environmental preservation, and community engagement. We operate strategically in <b>Palu (Gold Mine), Gorontalo (Quarry), and other potential regions.</b>",
     "jumlahProduk": "Total Products",
     "services": [
       {
         "id": "ekstraksi",
         "title": "Extraction",
-        "text": "We offer a wide range of extraction services using the latest equipment and techniques while ensuring safety and efficiency.",
+        "text": "We offer a range of extraction services utilizing cutting-edge equipment and tecniques to ensure safety and efficiency",
         "image": "/images/bisnis/ekstraksi.png"
       },
       {
         "id": "pengolahan",
         "title": "Processing",
-        "text": "We help you optimize mineral processing with tailored solutions to maximize yields.",
+        "text": "We help you optimize mineral processing with tailored solutions to ensure maximize yields.",
         "image": "/images/bisnis/pengolahan.png"
       },
       {
         "id": "reklamasi",
         "title": "Mine Reclamation",
-        "text": "We take responsibility for the environmental impact of mining operations by applying sustainable practices and restoring land conditions after extraction.",
+        "text": "We take responsibility for the environmental impact of the mine by implementing sustainable practices and helping restore the land after extraction.",
         "image": "/images/bisnis/reklamasi.png"
       },
       {
         "id": "peralatan",
         "title": "Equipment Management",
-        "text": "We help you manage mining equipment professionally to ensure optimal efficiency and productivity.",
+        "text": "We help you professionally manage mining equipment to ensure optimal efficiency and productivity.",
         "image": "/images/bisnis/peralatan.png"
       }
     ],

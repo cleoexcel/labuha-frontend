@@ -48,7 +48,9 @@ export default async function BisnisPage({
             </h2>
             <div style={{ width: 300, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 24px' }} />
             <p style={{ fontSize: 'clamp(15px, 1.6vw, 18px)', lineHeight: 1.9, color: 'var(--text-muted)' }}>
-              {t('description')}
+              {t.rich('description', {
+                b: (chunks) => <strong>{chunks}</strong>
+              })}
             </p>
           </div>
         </section>

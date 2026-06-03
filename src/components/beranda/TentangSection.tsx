@@ -22,7 +22,7 @@ export default async function TentangSection({ locale }: { locale: string }) {
           {t('title')}
         </h2>
         <div style={{ width: 150, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 16px' }} />
-        <p style={{ fontSize: 'clamp(13px, 1.2vw, 15px)', lineHeight: 1.9, color: 'var(--text-muted)', maxWidth: 760, margin: '0 auto 28px' }}>
+        <p style={{ fontSize: 'clamp(13px, 1.2vw, 15px)', lineHeight: 1.9, color: 'var(--text-muted)', maxWidth: 1000, margin: '0 auto 28px' }}>
           {t('description')}
         </p>
 
