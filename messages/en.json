@@ -159,7 +159,7 @@
     },
     "telp": {
       "label": "Phone",
-      "value": "+62 219788291"
+      "value": "+belum ada"
     },
     "lowongan": "Job Vacancies",
     "deadline": "Deadline:",
@@ -170,7 +170,7 @@
     "hero": "Sustainability",
     "tabs": {
       "program": "Sustainability Program",
-      "mutu": "Quality & OHS"
+      "mutu": "QHSE"
     },
     "csrTitle": "Corporate Social Responsibility",
     "lingkungan": {
@@ -182,7 +182,7 @@
       "text": "We actively engage in community development initiatives, including employing local residents, providing support for local infrastructure projects, and participating in religious and cultural festivities. We uphold a comprehensive Corporate Social Responsibility (CSR) framework encompassing environmental sustainability, economic empowerment. societal welfare, and healthcare initiatives."
     },
     "mutu": {
-      "title": "Quality & OHS",
+      "title": "QHSE",
       "items": [
         {
           "id": "keselamatan",

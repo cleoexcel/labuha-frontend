@@ -11,7 +11,7 @@ const images = [
   '/images/penghargaan/penghargaan-6.jpeg',
 ];
 
-export default function SertifikatSlider() {
+export default function PenghargaanSlider() {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => {

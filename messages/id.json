@@ -159,7 +159,7 @@
     },
     "telp": {
       "label": "Telp",
-      "value": "+62 219788291"
+      "value": "+belum ada"
     },
     "lowongan": "Lowongan Pekerjaan",
     "deadline": "Deadline:",
@@ -170,7 +170,7 @@
     "hero": "Keberlanjutan",
     "tabs": {
       "program": "Program Keberlanjutan",
-      "mutu": "Mutu & K3"
+      "mutu": "Mutu & K3L"
     },
     "csrTitle": "Tanggung Jawab Sosial Perusahaan",
     "lingkungan": {
@@ -182,7 +182,7 @@
       "text": "Kami aktif terlibat dalam inisiatif pengembangan masyarakat, termasuk menggunakan tenaga kerja lokal, mendukung proyek infrastruktur setempat, dan partisipasi dalam kegiatan keagamaan serta kebudayaan. Kami menerapkan kerangka kerja Corporate Social Responsibility (CSR) komprehensif yang mencakup keberlanjutan lingkungan, pemberdayaan ekonomi, kesejahteraan sosial, dan inisiatif kesehatan."
     },
     "mutu": {
-      "title": "Mutu & K3",
+      "title": "Mutu & K3L",
       "items": [
         {
           "id": "keselamatan",
