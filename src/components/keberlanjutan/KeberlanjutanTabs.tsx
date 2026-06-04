@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 
 interface KeberlanjutanTabsProps {
   programContent: React.ReactNode;
@@ -10,11 +11,12 @@ interface KeberlanjutanTabsProps {
 
 export default function KeberlanjutanTabs({ programContent, mutuContent }: KeberlanjutanTabsProps) {
   const t = useTranslations('keberlanjutanPage.tabs');
-  const [active, setActive] = useState<'program' | 'mutu'>('program');
+  const searchParams = useSearchParams();
+  const initialTab = searchParams.get('tab') === 'mutu' ? 'mutu' : 'program';
+  const [active, setActive] = useState<'program' | 'mutu'>(initialTab);
 
   return (
     <div>
-      {/* Tab bar */}
       <div style={{ borderBottom: '1px solid #e5e5e5', background: '#fff' }}>
         <div className="container" style={{ display: 'flex', gap: 0, justifyContent: 'center' }}>
           <button

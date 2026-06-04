@@ -10,10 +10,21 @@ export default function Navbar() {
   const params = useParams();
   const pathname = usePathname();
   const locale = params.locale as string;
-  const otherLocale = locale === 'id' ? 'en' : 'id';
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const switchLocalePath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  // Sub-menu labels (bilingual sederhana)
+  const isEn = locale === 'en';
+  const subMenus: Record<string, { label: string; href: string }[]> = {
+    tentang: [
+      { label: isEn ? 'About Us' : 'Tentang Kami', href: `/${locale}/tentang` },
+      { label: 'Board of Director & Commissioner', href: `/${locale}/tentang?tab=board` },
+    ],
+    keberlanjutan: [
+      { label: isEn ? 'Sustainability Program' : 'Program Keberlanjutan', href: `/${locale}/keberlanjutan` },
+      { label: 'QHSE', href: `/${locale}/keberlanjutan?tab=mutu` },
+    ],
+  };
 
   const navLinks = [
     { key: 'beranda', href: `/${locale}` },
@@ -43,18 +54,72 @@ export default function Navbar() {
         {/* Desktop nav links */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 2, flex: 1, justifyContent: 'center' }}
           className="desktop-nav">
-          {navLinks.map(link => (
-            <Link key={link.key} href={link.href} style={{
-              padding: '6px 10px', fontSize: 13,
-              fontWeight: isActive(link.href) ? 600 : 400,
-              color: isActive(link.href) ? 'var(--accent)' : '#fff',
-              textDecoration: 'none',
-              borderBottom: isActive(link.href) ? '2px solid var(--accent)' : '2px solid transparent',
-              whiteSpace: 'nowrap',
-            }}>
-              {t(link.key)}
-            </Link>
-          ))}
+          {navLinks.map(link => {
+            const hasDropdown = !!subMenus[link.key];
+            return (
+              <div
+                key={link.key}
+                style={{ position: 'relative' }}
+                onMouseEnter={() => hasDropdown && setOpenDropdown(link.key)}
+                onMouseLeave={() => hasDropdown && setOpenDropdown(null)}
+              >
+                <Link href={link.href} style={{
+                  padding: '6px 10px', fontSize: 13,
+                  fontWeight: isActive(link.href) ? 600 : 400,
+                  color: isActive(link.href) ? 'var(--accent)' : '#fff',
+                  textDecoration: 'none',
+                  borderBottom: isActive(link.href) ? '2px solid var(--accent)' : '2px solid transparent',
+                  whiteSpace: 'nowrap',
+                  display: 'inline-block',
+                }}>
+                  {t(link.key)}
+                </Link>
+
+                {/* Dropdown */}
+                {hasDropdown && openDropdown === link.key && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
+                    minWidth: 240,
+                    background: '#fff',
+                    borderRadius: 8,
+                    boxShadow: '0 6px 24px rgba(0,0,0,0.18)',
+                    overflow: 'hidden',
+                    paddingTop: 4,
+                    paddingBottom: 4,
+                  }}>
+                    {subMenus[link.key].map((sub, idx) => (
+                      <Link
+                        key={idx}
+                        href={sub.href}
+                        onClick={() => setOpenDropdown(null)}
+                        style={{
+                          display: 'block',
+                          padding: '10px 18px',
+                          fontSize: 13,
+                          color: 'var(--text)',
+                          textDecoration: 'none',
+                          whiteSpace: 'nowrap',
+                          transition: 'background 0.15s, color 0.15s',
+                        }}
+                        onMouseOver={e => {
+                          e.currentTarget.style.background = '#f5f0e0';
+                          e.currentTarget.style.color = 'var(--accent)';
+                        }}
+                        onMouseOut={e => {
+                          e.currentTarget.style.background = 'transparent';
+                          e.currentTarget.style.color = 'var(--text)';
+                        }}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Language switcher */}
@@ -95,18 +160,43 @@ export default function Navbar() {
           padding: '16px clamp(16px, 4vw, 60px)',
           display: 'flex', flexDirection: 'column', gap: 4,
         }} className="mobile-menu">
-          {navLinks.map(link => (
-            <Link key={link.key} href={link.href}
-              onClick={() => setMenuOpen(false)}
-              style={{
-                padding: '10px 0', fontSize: 14,
-                fontWeight: isActive(link.href) ? 600 : 400,
-                color: isActive(link.href) ? 'var(--accent)' : '#fff',
-                textDecoration: 'none', borderBottom: '1px solid #333',
-              }}>
-              {t(link.key)}
-            </Link>
-          ))}
+          {navLinks.map(link => {
+            const hasDropdown = !!subMenus[link.key];
+            return (
+              <div key={link.key}>
+                <Link href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  style={{
+                    padding: '10px 0', fontSize: 14,
+                    fontWeight: isActive(link.href) ? 600 : 400,
+                    color: isActive(link.href) ? 'var(--accent)' : '#fff',
+                    textDecoration: 'none',
+                    display: 'block',
+                    borderBottom: hasDropdown ? 'none' : '1px solid #333',
+                  }}>
+                  {t(link.key)}
+                </Link>
+                {/* Sub-menu mobile */}
+                {hasDropdown && (
+                  <div style={{ paddingLeft: 16, paddingBottom: 8, borderBottom: '1px solid #333' }}>
+                    {subMenus[link.key].map((sub, idx) => (
+                      <Link
+                        key={idx}
+                        href={sub.href}
+                        onClick={() => setMenuOpen(false)}
+                        style={{
+                          padding: '8px 0', fontSize: 13,
+                          color: '#bbb', textDecoration: 'none', display: 'block',
+                        }}
+                      >
+                        - {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
 

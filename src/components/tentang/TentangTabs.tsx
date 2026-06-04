@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 
 interface TentangTabsProps {
   tentangContent: React.ReactNode;
@@ -10,7 +11,9 @@ interface TentangTabsProps {
 
 export default function TentangTabs({ tentangContent, boardContent }: TentangTabsProps) {
   const t = useTranslations('tentangPage.tabs');
-  const [active, setActive] = useState<'tentang' | 'board'>('tentang');
+  const searchParams = useSearchParams();
+  const initialTab = searchParams.get('tab') === 'board' ? 'board' : 'tentang';
+  const [active, setActive] = useState<'tentang' | 'board'>(initialTab);
 
   return (
     <div>
