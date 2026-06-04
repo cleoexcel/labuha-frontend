@@ -17,21 +17,41 @@ export default async function TentangSection({ locale }: { locale: string }) {
 
   return (
     <section style={{ padding: '48px 0 0', background: '#fff' }}>
-      <div className="container" style={{ textAlign: 'center' }}>
-        <h2 style={{ fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 800, color: 'var(--text)', marginBottom: 16 }}>
-          {t('title')}
-        </h2>
-        <div style={{ width: 150, height: 3, background: 'var(--accent)', borderRadius: 2, margin: '0 auto 16px' }} />
-        <p style={{ fontSize: 'clamp(13px, 1.2vw, 15px)', lineHeight: 1.9, color: 'var(--text-muted)', maxWidth: 1000, margin: '0 auto 28px' }}>
-          {t('description')}
-        </p>
+      <div className="container">
 
-        <div style={{ marginBottom: 36 }}>
-          <GradientButton href={`/${locale}/tentang`}>
-            {t('cta')}
-          </GradientButton>
+        {/* Logo kiri + Teks kanan */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: 'clamp(24px, 5vw, 64px)',
+          alignItems: 'center',
+          marginBottom: 48,
+        }}>
+          {/* Logo */}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img
+              src="/images/logo-labuha.png"
+              alt="PT Labuha Inter Nusa"
+              style={{ width: '100%', maxWidth: 420, objectFit: 'contain' }}
+            />
+          </div>
+
+          {/* Teks */}
+          <div>
+            <h2 style={{ fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 800, color: 'var(--text)', marginBottom: 8 }}>
+              {t('title')}
+            </h2>
+            <div style={{ width: 80, height: 3, background: 'var(--accent)', borderRadius: 2, marginBottom: 20 }} />
+            <p style={{ fontSize: 'clamp(13px, 1.4vw, 16px)', lineHeight: 1.9, color: 'var(--text-muted)', textAlign: 'justify', marginBottom: 28 }}>
+              {t('description')}
+            </p>
+            <GradientButton href={`/${locale}/tentang`}>
+              {t('cta')}
+            </GradientButton>
+          </div>
         </div>
 
+        {/* 3 Card Produk Featured */}
         {products.length > 0 && (
           <div style={{
             display: 'grid',
