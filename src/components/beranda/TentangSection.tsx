@@ -27,7 +27,6 @@ export default async function TentangSection({ locale }: { locale: string }) {
           alignItems: 'center',
           marginBottom: 48,
         }}>
-          {/* Logo */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
               src="/images/logo-labuha.png"
@@ -36,7 +35,6 @@ export default async function TentangSection({ locale }: { locale: string }) {
             />
           </div>
 
-          {/* Teks */}
           <div>
             <h2 style={{ fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 800, color: 'var(--text)', marginBottom: 8 }}>
               {t('title')}
@@ -51,24 +49,48 @@ export default async function TentangSection({ locale }: { locale: string }) {
           </div>
         </div>
 
-        {/* 3 Card Produk Featured */}
+        {/* 3 Card Produk Featured dengan background gambar */}
         {products.length > 0 && (
           <div style={{
             display: 'grid',
             gridTemplateColumns: `repeat(${Math.min(products.length, 3)}, 1fr)`,
             gap: 'clamp(8px, 1.5vw, 16px)',
           }}>
-            {products.map(product => (
+            {products.map((product, i) => (
               <div key={product.id} style={{
-                background: 'var(--bg-dark)',
+                position: 'relative',
                 borderRadius: 12,
-                padding: 'clamp(32px, 5vw, 56px) 20px',
+                overflow: 'hidden',
                 textAlign: 'center',
                 display: 'flex', flexDirection: 'column',
                 alignItems: 'center', justifyContent: 'center',
                 minHeight: 'clamp(200px, 22vw, 320px)',
+                padding: 'clamp(32px, 5vw, 56px) 20px',
+                background: 'var(--bg-dark)',
               }}>
+                {/* Background image */}
+                <img
+                  src={`/images/produk/featured-${i + 1}.png`}
+                  alt=""
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    opacity: 0.35,
+                  }}
+                />
+                {/* Dark overlay tambahan */}
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'rgba(20,20,20,0.55)',
+                }} />
+
+                {/* Konten di atas */}
                 <span style={{
+                  position: 'relative',
                   fontSize: 'clamp(56px, 9vw, 100px)',
                   fontWeight: 900, color: '#fff',
                   lineHeight: 1, display: 'block', marginBottom: 12,
@@ -76,6 +98,7 @@ export default async function TentangSection({ locale }: { locale: string }) {
                   <CountUp target={product.quantity} />
                 </span>
                 <span style={{
+                  position: 'relative',
                   fontSize: 'clamp(14px, 1.5vw, 20px)',
                   fontWeight: 700, color: 'var(--accent)',
                   lineHeight: 1.4, display: 'block',
