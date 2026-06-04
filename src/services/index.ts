@@ -1,5 +1,5 @@
 import { apiFetch } from '@/lib/api';
-import type { ApiResponse, Product, BoardOfDirector, BoardOfCommissioner, News, JobVacancy } from '@/types';
+import type { ApiResponse, Product, BoardOfDirector, BoardOfCommissioner, News, JobVacancy, Certification } from '@/types';
 
 export const productService = {
   getFeatured: () => apiFetch<ApiResponse<Product[]>>('/api/products/featured'),
@@ -20,4 +20,8 @@ export const newsService = {
 
 export const jobService = {
   getAll: () => apiFetch<ApiResponse<JobVacancy[]>>('/api/jobs'),
+};
+
+export const certificationService = {
+  getAll: () => apiFetch<ApiResponse<Certification[]>>('/api/certifications'),
 };

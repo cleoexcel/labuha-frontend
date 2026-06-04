@@ -11,7 +11,7 @@ export default async function KeberlanjutanPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  await params;
+  const { locale } = await params;
   const t = await getTranslations('keberlanjutanPage');
 
   return (
@@ -21,7 +21,7 @@ export default async function KeberlanjutanPage({
         <HeroSection title={t('hero')} />
         <KeberlanjutanTabs
           programContent={<ProgramContent />}
-          mutuContent={<MutuContent />}
+          mutuContent={<MutuContent locale={locale} />}
         />
       </main>
       <Footer />

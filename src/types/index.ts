@@ -50,3 +50,11 @@ export interface JobVacancy {
   is_open: boolean;
   apply_url: string;
 }
+
+export interface Certification {
+  id: string;
+  title: string;
+  title_en: string;
+  photo_url: string;
+  order_index: number;
+}

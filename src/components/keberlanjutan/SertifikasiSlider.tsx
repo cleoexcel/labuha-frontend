@@ -2,31 +2,35 @@
 
 import { useState, useEffect, useCallback } from 'react';
 
-const items = [
-  { code: 'ISO 9001:2015', title: 'Sistem Manajemen Mutu', image: '/images/sertifikasi/sertifikasi-1.jpeg' },
-  { code: 'ISO 45001:2018', title: 'Sistem Manajemen Keselamatan & Kesehatan Kerja', image: '/images/sertifikasi/sertifikasi-2.jpeg' },
-  { code: 'ISO 14001:2015', title: 'Sistem Manajemen Lingkungan', image: '/images/sertifikasi/sertifikasi-3.jpeg' },
-  { code: 'Sertifikat ISO Terintegrasi', title: 'Mutu, Lingkungan, dan K3', image: '/images/sertifikasi/sertifikasi-4.jpeg' },
-];
+interface CertItem {
+  id: string;
+  title: string;
+  photo_url: string;
+}
 
-export default function SertifikasiSlider() {
+export default function SertifikasiSlider({ items }: { items: CertItem[] }) {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => {
     setCurrent(c => (c + 1) % items.length);
-  }, []);
+  }, [items.length]);
 
   useEffect(() => {
+    if (items.length <= 1) return;
     const timer = setInterval(next, 2500);
     return () => clearInterval(timer);
-  }, [next]);
+  }, [next, items.length]);
+
+  if (items.length === 0) {
+    return <p style={{ textAlign: 'center', color: '#aaa', padding: '40px 0' }}>Belum ada sertifikat.</p>;
+  }
 
   return (
     <div style={{ width: '100%' }}>
       <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3' }}>
         {items.map((item, i) => (
           <div
-            key={i}
+            key={item.id}
             style={{
               position: 'absolute',
               inset: 0,
@@ -39,13 +43,17 @@ export default function SertifikasiSlider() {
               pointerEvents: i === current ? 'auto' : 'none',
             }}
           >
-            <img
-              src={item.image}
-              alt={item.title}
-              style={{ width: '100%', height: '82%', objectFit: 'contain', marginBottom: 16 }}
-            />
+            {item.photo_url ? (
+              <img
+                src={item.photo_url}
+                alt={item.title}
+                style={{ width: '100%', height: '82%', objectFit: 'contain', marginBottom: 16 }}
+              />
+            ) : (
+              <div style={{ width: '100%', height: '82%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 40, marginBottom: 16 }}>📄</div>
+            )}
             <p style={{ fontSize: 'clamp(13px, 1.4vw, 16px)', fontWeight: 600, color: 'var(--text)', textAlign: 'center' }}>
-              <span style={{ color: 'var(--accent)', fontWeight: 800 }}>{item.code}</span> — {item.title}
+              {item.title}
             </p>
           </div>
         ))}
