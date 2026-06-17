@@ -6,6 +6,8 @@ const heroImages = [
   '/images/hero.png',
   '/images/hero-2.png',
   '/images/hero-3.png',
+  '/images/hero-4.png',
+  
 ];
 
 export default function HeroSection({ title }: { title: string }) {
