@@ -16,6 +16,7 @@ export default async function KontakPage({
       padding: '2px',
       borderRadius: 10,
       background: 'linear-gradient(to right, #C29B24, #1a1a1a)',
+      height: '100%',
     }}>
       <div style={{
         background: '#f5f5f5',
@@ -24,6 +25,7 @@ export default async function KontakPage({
         alignItems: 'center',
         gap: 20,
         padding: 'clamp(18px, 2.5vw, 28px) clamp(20px, 3vw, 36px)',
+        height: '100%',
       }}>
         {children}
       </div>
@@ -63,7 +65,7 @@ export default async function KontakPage({
                 </div>
               </GradientCard>
 
-              {/* Email & Telp */}
+              {/* Email, Telp & Instagram */}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
 
                 {/* Email */}
@@ -100,6 +102,35 @@ export default async function KontakPage({
                     </p>
                   </div>
                 </GradientCard>
+
+                {/* Instagram */}
+                <a
+                  href="https://instagram.com/adijayaberkahmandiri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                  }}
+                >
+                  <GradientCard>
+                    <div style={{ flexShrink: 0 }}>
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--text)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p style={{ fontSize: 'clamp(16px, 1.8vw, 20px)', fontWeight: 700, marginBottom: 4 }}>
+                        Instagram
+                      </p>
+                      <p style={{ fontSize: 'clamp(12px, 1.2vw, 14px)', color: 'var(--text-muted)', fontWeight: 600 }}>
+                        @adijayaberkahmandiri
+                      </p>
+                    </div>
+                  </GradientCard>
+                </a>
 
               </div>
             </div>
