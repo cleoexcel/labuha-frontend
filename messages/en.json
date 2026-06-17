@@ -181,28 +181,23 @@
       "title": "Community Development",
       "text": "We actively engage in community development initiatives, including employing local residents, providing support for local infrastructure projects, and participating in religious and cultural festivities. We uphold a comprehensive Corporate Social Responsibility (CSR) framework encompassing environmental sustainability, economic empowerment. societal welfare, and healthcare initiatives."
     },
-    "mutu": {
-      "title": "QHSE",
+        "mutu": {
+      "title": "Quality & HSE",
       "items": [
         {
-          "id": "Mutu",
-          "title": "Quality",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
-        },
-        {
-          "id": "kesehatan",
-          "title": "Health",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
-        },
-        {
           "id": "keselamatan",
-          "title": "Safety",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+          "title": "Safety First",
+          "text": "Led by experienced HSE managers, we ensure rigorous adherence to safety protocols and continuous improvement in HSE management. Our workforce undergoes regular training to uphold safe and effective operations, supported by cutting-edge technology and equipment. Through our Safety Committee, every level of our organization, from directors to operational supervisors, contributes to fostering a secure working environment."
         },
         {
           "id": "lingkungan",
-          "title": "Environment",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+          "title": "Environmental Stewardship",
+          "text": "We work with the community to employ local wisdom in protecting the environment where we operate. We work with experts from UNTAD for slope stability assessments and employ advanced environmental infrastructure such as oil traps, settling ponds, and water spray systems. Our commitment extends to nurturing local biodiversity through reforestation efforts and establishing a nursery for post-mining land reclamation."
+        },
+        {
+          "id": "masyarakat",
+          "title": "Community Development",
+          "text": "We actively engage in community development initiatives, including employing local residents, providing support for local infrastructure projects, and participating in religious and cultural festivities. We uphold a comprehensive Corporate Social Responsibility (CSR) framework encompassing environmental sustainability, economic empowerment, societal welfare, and healthcare initiatives."
         }
       ]
     }

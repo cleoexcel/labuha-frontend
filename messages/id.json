@@ -182,27 +182,22 @@
       "text": "Kami aktif terlibat dalam inisiatif pengembangan masyarakat, termasuk menggunakan tenaga kerja lokal, mendukung proyek infrastruktur setempat, dan partisipasi dalam kegiatan keagamaan serta kebudayaan. Kami menerapkan kerangka kerja Corporate Social Responsibility (CSR) komprehensif yang mencakup keberlanjutan lingkungan, pemberdayaan ekonomi, kesejahteraan sosial, dan inisiatif kesehatan."
     },
     "mutu": {
-      "title": "QHSE",
+      "title": "Mutu & K3",
       "items": [
         {
-          "id": "Mutu",
-          "title": "Mutu",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
-        },
-        {
-          "id": "kesehatan",
-          "title": "Kesehatan",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
-        },
-        {
           "id": "keselamatan",
-          "title": "Keselamatan",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+          "title": "Keselamatan Nomor Satu",
+          "text": "Dipimpin oleh manajer K3 berpengalaman, kami memastikan kepatuhan ketat terhadap protokol keselamatan dan peningkatan berkelanjutan dalam manajemen K3. Tenaga kerja kami mengikuti pelatihan rutin untuk menjaga operasional yang aman dan efektif, didukung oleh teknologi dan peralatan mutakhir. Melalui Komite Keselamatan kami, setiap tingkatan organisasi, dari direktur hingga pengawas operasional, berkontribusi dalam menciptakan lingkungan kerja yang aman."
         },
         {
           "id": "lingkungan",
-          "title": "Lingkungan",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi sapien, egestas id posuere a, rhoncus sed ligula. Sed egestas eros nec quam porta, egestas ultrices orci suscipit."
+          "title": "Kepedulian Lingkungan",
+          "text": "Kami bekerja sama dengan Masyarakat untuk menerapkan kearifan lokal dalam melindungi lingkungan di area operasional kami. Kami bekerja sama dengan ahli dari UNTAD untuk mengukur stabilitas lereng dan menggunakan infrastruktur lingkungan yang canggih seperti oil trap, settling pond, dan water spray. Komitmen kami juga meliputi upaya untuk melestarikan keanekaragaman hayati lokal melalui program penghijauan dan pendirian konservatorium untuk reklamasi lahan pascatambang."
+        },
+        {
+          "id": "masyarakat",
+          "title": "Pengembangan Masyarakat",
+          "text": "Kami aktif terlibat dalam inisiatif pengembangan masyarakat, termasuk menggunakan tenaga kerja lokal, mendukung proyek infrastruktur setempat, dan partisipasi dalam kegiatan keagamaan serta kebudayaan. Kami menerapkan kerangka kerja Corporate Social Responsibility (CSR) komprehensif yang mencakup keberlanjutan lingkungan, pemberdayaan ekonomi, kesejahteraan sosial, dan inisiatif kesehatan."
         }
       ]
     }

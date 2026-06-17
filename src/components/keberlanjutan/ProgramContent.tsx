@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import PhotoSlider from './PhotoSlider';
 
 export default async function ProgramContent() {
   const t = await getTranslations('keberlanjutanPage');
@@ -26,7 +27,11 @@ export default async function ProgramContent() {
             gap: 'clamp(24px, 4vw, 48px)',
             alignItems: 'center',
           }}>
-            <img src="/images/keberlanjutan/lingkungan.png" alt={t('lingkungan.title')} style={{ width: '100%', objectFit: 'cover' }} />
+            <PhotoSlider images={[
+  '/images/keberlanjutan/lingkungan-1.jpeg',
+  '/images/keberlanjutan/lingkungan-2.jpeg',
+  '/images/keberlanjutan/lingkungan-3.jpeg',
+]} interval={1000} />
             <div>
               <h3 style={{
                 fontSize: 'clamp(20px, 2.4vw, 30px)',
@@ -76,7 +81,12 @@ export default async function ProgramContent() {
                 {t('masyarakat.text')}
               </p>
             </div>
-            <img src="/images/keberlanjutan/masyarakat.png" alt={t('masyarakat.title')} style={{ width: '100%', objectFit: 'cover' }} />
+            <PhotoSlider images={[
+  '/images/keberlanjutan/masyarakat-1.jpg',
+  '/images/keberlanjutan/masyarakat-2.jpg',
+  '/images/keberlanjutan/masyarakat-3.jpeg',
+  '/images/keberlanjutan/masyarakat-4.jpeg',
+]} interval={1000} />
           </div>
           </ScrollReveal>
         </div>
